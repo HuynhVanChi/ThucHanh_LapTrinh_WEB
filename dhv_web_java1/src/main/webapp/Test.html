@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập & Đăng ký</title>
+
+    <!-- Kết nối CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Form Đăng nhập -->
+    <div class="form active" id="loginForm">
+        <h2>Đăng nhập</h2>
+
+        <div class="input-box">
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Mật khẩu">
+        </div>
+
+        <button>Đăng nhập</button>
+
+        <div class="toggle">
+            Chưa có tài khoản?
+            <a onclick="showRegister()">Đăng ký</a>
+        </div>
+    </div>
+
+    <!-- Form Đăng ký -->
+    <div class="form" id="registerForm">
+        <h2>Đăng ký</h2>
+
+        <div class="input-box">
+            <input type="text" placeholder="Họ tên">
+        </div>
+
+        <div class="input-box">
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Mật khẩu">
+        </div>
+
+        <button>Đăng ký</button>
+
+        <div class="toggle">
+            Đã có tài khoản?
+            <a onclick="showLogin()">Đăng nhập</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function showRegister(){
+        document.getElementById("loginForm").classList.remove("active");
+        document.getElementById("registerForm").classList.add("active");
+    }
+
+    function showLogin(){
+        document.getElementById("registerForm").classList.remove("active");
+        document.getElementById("loginForm").classList.add("active");
+    }
+</script>
+
+</body>
+</html>
