@@ -14,6 +14,7 @@
     <label>Mật khẩu</label>
     <input type="text"><br><br>
     <input type="submit"; value="Đăng ký";>
+    <h2>hello</h2>
 </form>
 
 </body>
